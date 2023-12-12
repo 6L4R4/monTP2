@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*header*/
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+/*body*/
+body {
+    background-image: url(images/fond.jpg);
+}
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: rgb(255, 192, 218);
+    width: 100%;
+    margin-top: 20px;
+}
+/*Display flex de l'entête*/
+#entete{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+/*Emplacement du menu*/
+#menu{
+    position: relative;
+    top: -99px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: rgb(255, 192, 218);
+    padding: 3px;
+}
+/*Display flex de l'accueil*/
+#accueil {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color:  rgb(255, 135, 175,.7);
+    font-size: large;
+}
+/*Display flex pour le titre et la div contenant les paragraphes et les images*/
+#article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color:  rgb(255, 135, 175,.7);
+    margin-top: 70px;
+}
+/*Display flex pour les paragraphes ainsi que les images*/
+#article1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px 20px;
+}
+/*Display flex pour images contenues dans la div Article*/
+#imagesArticle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+/*Section contenant le tableau*/
+#tableau {
+    background-color:  rgb(255, 135, 175,.7);
+    padding: 20px;
+    margin-top: 70px;
+}
+/*Tableau*/
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 60%;
+    text-align: center;
+    margin: auto 20%;
+}
+/*Border des cases du tableau*/
+th, td{
+    border: 1px solid black;
+    padding: 1px;
+}
+/*Couleur titres des colones*/
+th{
+    background-color: palevioletred;
+}
+/*Couleur rangées du tableau paires*/
+tr:nth-child(even){
+    background-color: rgb(255, 211, 239);
+}
+/*Couleur rangées du tableau impaires*/
+tr:nth-child(odd){
+    background-color: rgb(255, 247, 251);
+}
+/*Display flex du titre de la div video et de la div contenant la vidéo et le paragraphe*/
+#video{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 70px;
+    background-color:  rgb(255, 135, 175,.7);
+    padding: 20px;
+}
+/*Display flex de la vidéo et du paragraphe*/
+#villainS{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: 16%;
+}
+/*Div de la galerie*/
+#galerie {
+    margin: auto auto;
+    background-color:  rgb(255, 135, 175,.7);
+    margin-top: 70px;
+    padding: 20px;
+}
+/*Display flex des photos dans la galerie*/
+#galeriePhoto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+/*Largeur et marge de tous les conteneurs nommés conteneur*/
+#conteneur{
+    width: 10%;
+    margin: auto 40px;
+}
+/*Formulaire d'incription*/
+form{
+    background-color:  rgb(255, 135, 175,.7);
+    padding: 20px;
+    margin-top: 70px;
+}
+/*button formulaire*/
+#button_submit{
+    margin-left: 325px;
+    padding: 3px;
+}
+/*Titre principal*/
+h1{
+    position: relative;
+    top: -90px;
+    left: 44%;
+    background-color: rgb(255, 255, 255,.5) ;
+    width: fit-content;
+    padding: 5px;
+    font-size: 3em;
+}
+/*Couleur des éléments du menu*/
+a{
+    color: black;
+}
+/*Titres secondaires*/
+h2{
+    padding: 10px;
+    background-color: rgba(255, 249, 251, 0.7);
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+    color: rgb(92, 16, 67);
+}
+/*Margin the tous les paragaphes*/
+p{
+    margin: 10px 20px;
+}
+/*Titre du tableau*/
+table caption{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    background-color: rgba(255, 249, 251, 0.7);
+    padding: 10px;
+    color: rgb(92, 16, 67);
+}
+/*Titre de la section vidéo*/
+#video h2{
+    height: 75px;
+    margin: 10px auto;
+}
+/*Paragraphe dans section vidéo*/
+#villainS p{
+    width: 40%;
+    margin-left: 20%;
+}
+/*Titre inscription*/
+#inscription h3{
+    color: rgb(92, 16, 67);
+    background-color: rgba(255, 249, 251, 0.7);
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+/*Mettre lesfigcaption en gras*/
+span{
+    font-weight: bolder;
+}
+/*Largeur du logo*/
+#logo img{
+    width: 100%;
+}
+/*Largeur de l'image de l'entête*/
+#image img{
+    width: 100%;
+}
+/*Images dans tous les conteneurs*/
+#conteneur img{
+    width: 10vw;
+    padding: 10px;
+    transition: width 2s;
+}
+footer img {
+    margin: 5% auto 5% auto;
+}
+/*Première lettre du titre principal*/
+h1::first-letter{
+    font-size: 1.5em;
+}
+/*Changement de couleur quand visited*/
+a:visited{
+    color: rgb(92, 16, 67);
+}
+/*Grosseur quand hover*/
+a:hover{
+    transform: scale(1.2, 1.2);
+}
+/*Changement de couleur quand hover sur une rangée du tableau*/
+tr:hover{
+    background-color: rgb(255, 135, 175);
+    transition: background-color 1s;
+}
+/*Hover toutea les images dans un conteneur*/
+#conteneur img:hover{
+    width: 15vw;
+    transition: width 2s;
+}
